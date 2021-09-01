@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a blackjack">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@500&display=swap" rel="stylesheet">
+  <title>Blackjack</title>
+ </head>
+
+ <body>
+  <div id="main">
+   <h1 id="title">Blackjack</h1>
+   <div id= "app">
+     <h2 class="app-text" id="game-result">Want to play a round?</h2>
+     <h2 class="app-text" id="cards-el">Cards: </h2>
+     <h2 class="app-text" id="sum-el">Sum: </h2>
+     <div id="buttons">
+       <button type="button" onclick="startGame()"><span class="button-text">Start Game</span></button>
+       <button type="button" onclick="newCard()"><span class="button-text">New Card</span></button>
+     </div>
+       <p id="error-text"></p>
+    <div id="money">
+      <h2 class="app-text" id="current-bet"></h2>
+      <div id="betting-money">
+        <span class="app-text" id="money-bet"></span>
+        <button type="button" class="money-button" onclick="addMoney()"><span class="money-text">+</span></button>
+        <button type="button" class="money-button" onclick="substractMoney()"><span class="money-text">-</span></button>
+      </div>
+      <div id="winnings-grid">
+        <h2 class="app-text" id="total-money" style="text-align:right"> </h2>
+        <h2 id="winnings" style="text-align:left"></h2>
+      </div>
+      
+
+    </div>
+     
+   </div>
+</div>
+
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="objects.js"></script>
+
+ </body>
+
+
+</html>
